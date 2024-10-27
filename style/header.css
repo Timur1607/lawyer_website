@@ -1,0 +1,57 @@
+.container {
+  max-width: 1920px;
+  width: 100px;
+  margin: 0;
+}
+
+.header {
+  background-image: url(./img/background-img.webp);
+  padding: 0 300px;
+}
+.header__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+}
+.header__info-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.header__info-1_number {
+  display: flex;
+  justify-content: space-between;
+  max-width: 162px;
+  width: 100%;
+}
+.header__info-1_number .number__img {
+  width: 32px;
+  height: 32px;
+}
+.header__info-1_number .number__text {
+  color: #FFF;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.header__info-1_mail {
+  display: flex;
+  justify-content: space-between;
+  max-width: 162px;
+  width: 100%;
+}
+.header__info-1_mail .mail__img {
+  width: 32px;
+  height: 32px;
+}
+.header__info-1_mail .mail__text {
+  color: #FFF;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+}/*# sourceMappingURL=header.css.map */
