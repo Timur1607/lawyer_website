@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "NunitoSans";
+    src: url(./font/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf),
+    url(),
+    url(),
+    url(),
+    url();
+}
+
+.container{
+    max-width: 1458px;
+    width: 100%;
+    padding: 0 69px;
+    margin: 0 auto;
+}
+
+@media screen and ( max-width: 490px){
+    .container{
+        padding:0 24px;
+    }
+}
