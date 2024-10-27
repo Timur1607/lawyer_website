@@ -433,12 +433,24 @@ h1{
             align-items: flex-start;
             gap: 24px;
         }
+
+        &__button1{
+            max-width: 210px;
+            width: 100%;
+            height: 49px;
+        }
+
+        &__button2{
+            max-width: 161px;
+            width: 100%;
+            height: 49px;
+        }
     }
 }
 
 .button{
     display: flex;
-    padding: 16px 24px;
+    // padding: 16px 24px;
     align-items: flex-start;
     gap: 10px;
     border: 2px solid #4F8FF0;
@@ -450,11 +462,14 @@ h1{
     font-weight: 900;
     line-height: 120%; 
     text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .button_gray{
     display: flex;
-    padding: 16px 24px;
+    // padding: 16px 24px;
     align-items: flex-start;
     gap: 10px;
     border: 2px solid #E6E6E6;
@@ -466,4 +481,7 @@ h1{
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
