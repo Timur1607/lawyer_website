@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.scss">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -97,9 +98,11 @@
     <section class="history">
         <div class="container">
             <div class="history__all">
-                <div class="history-text">
+                <div class="history__text history-text">
                     <div class="history-text__title"> 
-                        <h2 class="history-text__title_h2">Юридическая компания <span class="history-text__title_span">правозащитник</span></h2>
+                        <div class="history-text__title_all">
+                            <h2 class="history-text__title_h2">Юридическая компания <span class="history-text__title_span">правозащитник</span></h2>
+                        </div>
                         <hr class="history-text__title_hr"></hr>
                     </div>
                     <div class="history-text__text">
@@ -112,7 +115,9 @@
                         <button class="button_gray history-text__button2">Сертификаты</button>
                     </div>
                 </div>
-                <img class="history-picture" src="./img/books.webp" alt="книги">
+                <div class="history-img">
+                    <img class="history-picture" src="./img/books.webp" alt="книги">
+                </div>
             </div>
         </div>
     </section>
