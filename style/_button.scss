@@ -15,6 +15,13 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+
+    &:hover{
+        border: 2px solid #4F8FF0;
+        background: #FFF;
+        color: #4F8FF0;
+    }
 
     &_gray{
         display: flex;
@@ -33,5 +40,10 @@
         cursor: pointer;
         align-items: center;
         justify-content: center;
+
+        &:hover{
+            border: 2px solid #E6E6E6;
+            background: #FFF;
+        }
     }
 }
