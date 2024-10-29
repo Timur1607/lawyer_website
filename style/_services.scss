@@ -88,6 +88,29 @@
     }
 
     &-article{
+
+        path{
+            transition: 0.5s;
+        }
+
+        &:hover{
+            background: #4F8FF0;
+            transition: 0.5s;
+
+            path{
+                // stroke: #FFFFFF;
+                fill: #FFFFFF;
+            }
+
+            .services-article__info_name{
+                color:#FFF;
+            }
+            .services-article__info_text{
+                color:#FFF;
+            }
+        }
+
+
         &__img{
             width: 35px;
             height: 35px;

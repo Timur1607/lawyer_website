@@ -509,6 +509,22 @@ h1 {
   cursor: pointer;
   margin-top: 34px;
 }
+.services-article path {
+  transition: 0.5s;
+}
+.services-article:hover {
+  background: #4F8FF0;
+  transition: 0.5s;
+}
+.services-article:hover path {
+  fill: #FFFFFF;
+}
+.services-article:hover .services-article__info_name {
+  color: #FFF;
+}
+.services-article:hover .services-article__info_text {
+  color: #FFF;
+}
 .services-article__img {
   width: 35px;
   height: 35px;
