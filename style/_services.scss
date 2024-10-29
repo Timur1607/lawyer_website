@@ -49,10 +49,11 @@
             justify-content: space-between;
             justify-items: center;
             gap: 24px;
+            row-gap: 38px;
         }
 
         &__article{
-            max-width: 424px;
+            // max-width: 424px;
             width: 100%;
             // height: 250px;
             padding: 50px 32px;
@@ -62,7 +63,7 @@
             gap: 15px;
             background: #FFF;
             justify-content: space-between;
-            margin-bottom: 14px;
+            // margin-bottom: 14px;
         }
 
         &__button{
@@ -158,6 +159,7 @@
             &__articles{
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                 justify-items: center;
+                row-gap: 24px;
             }
 
             &__article{
@@ -183,13 +185,31 @@
     }
 }
 
+@media screen and (max-width:661px){
+    .services{
+        &-all{
+            &__articles{
+                display: flex;
+                overflow: scroll;
+            }
+
+            &__articles{
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:390px){
     .services{
         padding: 40px 0;
 
         &-all{
             &__info{
-                margin-bottom: 16px;
+                // margin-bottom: 16px;
                 
                 &_h2{
                     font-size: 20px;
@@ -202,10 +222,7 @@
             }
 
             &__articles{
-                display: flex;
-
-                overflow: scroll;
-
+                
                 &::-webkit-scrollbar {
                     width: 0;
                     height: 0;
@@ -214,11 +231,26 @@
 
             &__article{
                 width: 250px;
+                width: 100%;
+                height: 215px;
                 padding: 24px 16px 32px 16px;
             }
 
             &__button{
                 margin-top: 30px;
+            }
+        }
+
+        &-article{
+            &__info{
+                &_text{
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                }
             }
         }
     }

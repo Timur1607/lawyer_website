@@ -476,9 +476,9 @@ h1 {
   justify-content: space-between;
   justify-items: center;
   gap: 24px;
+  row-gap: 38px;
 }
 .services-all__article {
-  max-width: 424px;
   width: 100%;
   padding: 50px 32px;
   display: flex;
@@ -487,7 +487,6 @@ h1 {
   gap: 15px;
   background: #FFF;
   justify-content: space-between;
-  margin-bottom: 14px;
 }
 .services-all__button {
   width: 138px;
@@ -563,6 +562,7 @@ h1 {
   .services-all__articles {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
+    row-gap: 24px;
   }
   .services-all__article {
     padding: 30px 32px 40px 32px;
@@ -578,20 +578,7 @@ h1 {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 390px) {
-  .services {
-    padding: 40px 0;
-  }
-  .services-all__info {
-    margin-bottom: 16px;
-  }
-  .services-all__info_h2 {
-    font-size: 20px;
-  }
-  .services-all__info_text {
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
+@media screen and (max-width: 661px) {
   .services-all__articles {
     display: flex;
     overflow: scroll;
@@ -600,12 +587,37 @@ h1 {
     width: 0;
     height: 0;
   }
+}
+@media screen and (max-width: 390px) {
+  .services {
+    padding: 40px 0;
+  }
+  .services-all__info_h2 {
+    font-size: 20px;
+  }
+  .services-all__info_text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .services-all__articles::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   .services-all__article {
     width: 250px;
+    width: 100%;
+    height: 215px;
     padding: 24px 16px 32px 16px;
   }
   .services-all__button {
     margin-top: 30px;
+  }
+  .services-article__info_text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 .button {
