@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, img {
   display: block;
 }
 
@@ -199,6 +199,13 @@ table {
   src: url(./font/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf), url(), url(), url(), url();
 }
 .container {
+  max-width: 1458px;
+  width: 100%;
+  padding: 0 69px;
+  margin: 0 auto;
+}
+
+.container-2 {
   max-width: 1458px;
   width: 100%;
   padding: 0 69px;
@@ -605,7 +612,6 @@ h1 {
   }
   .services-all__article {
     width: 250px;
-    width: 100%;
     height: 215px;
     padding: 24px 16px 32px 16px;
   }
@@ -663,4 +669,85 @@ h1 {
 .button_gray:hover {
   border: 2px solid #E6E6E6;
   background: #FFF;
+}
+
+.lawyers {
+  padding: 80px 0;
+  background: #F7F7F7;
+}
+.lawyers-all__title {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.lawyers-all__title_h2 {
+  color: #222;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.lawyers-all__title_hr {
+  width: 50px;
+  height: 3px;
+  background: #4F8FF0;
+  border: none;
+}
+.lawyers-all__title_text {
+  max-width: 920px;
+  width: 100%;
+  color: #222;
+  text-align: center;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.lawyers-all__articles {
+  display: flex;
+  gap: 24px;
+}
+.lawyers-all__article {
+  max-width: 312px;
+  width: 100%;
+  padding: 0 0 24px 0;
+  background-color: #FFFFFF;
+}
+.lawyers-all__article_picture {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.lawyers-all__article-info {
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.lawyers-all__article-info_name {
+  color: #222;
+  text-align: center;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.lawyers-all__article-info_profession {
+  color: #222;
+  text-align: center;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  text-transform: lowercase;
 }/*# sourceMappingURL=style.css.map */

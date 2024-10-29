@@ -1,0 +1,93 @@
+.lawyers{
+    padding: 80px 0;
+    background: #F7F7F7;
+
+
+    &-all{
+        &__title{
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+
+            &_h2{
+                color: #222;
+                font-family: "NunitoSans", sans-serif;
+                font-size: 28px;
+                font-weight: 800;
+                line-height: 150%; 
+                text-transform: uppercase;
+            }
+
+            &_hr{
+                width: 50px;
+                height: 3px;
+                background: #4F8FF0;
+                border: none;
+            }
+
+            &_text{
+                max-width: 920px;
+                width: 100%;
+                color: #222;
+                text-align: center;
+                font-family: "NunitoSans", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                margin: 0 auto;
+                margin-bottom: 48px;
+            }
+        }
+
+        &__articles{
+            display: flex;
+            gap: 24px;
+        }
+
+        &__article{
+            max-width: 312px;
+            width: 100%;
+            padding: 0 0 24px 0;
+            background-color: #FFFFFF;
+
+            &_picture{
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 24px;
+            }
+
+            &-info{
+                display: flex;
+                padding: 0px 16px;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+
+                &_name{
+                    color: #222;
+                    text-align: center;
+                    font-family: "NunitoSans", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%;
+                }
+
+                &_profession{
+                    color: #222;
+                    text-align: center;
+                    font-family: "NunitoSans", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 120%;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
