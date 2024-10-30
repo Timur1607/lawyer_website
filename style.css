@@ -515,6 +515,9 @@ h1 {
   cursor: pointer;
   margin-top: 34px;
 }
+.services-article {
+  position: relative;
+}
 .services-article path {
   transition: 0.5s;
 }
@@ -530,6 +533,18 @@ h1 {
 }
 .services-article:hover .services-article__info_text {
   color: #FFF;
+}
+.services-article:hover .services-article__hover_bl {
+  display: block;
+}
+.services-article:hover .services-article__hover_br {
+  display: block;
+}
+.services-article:hover .services-article__hover_tl {
+  display: block;
+}
+.services-article:hover .services-article__hover_tr {
+  display: block;
 }
 .services-article__img {
   width: 35px;
@@ -557,6 +572,50 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+.services-article__hover_bl {
+  position: absolute;
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  border-top: none;
+  border-right: none;
+  left: 20px;
+  bottom: 20px;
+}
+.services-article__hover_br {
+  position: absolute;
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  border-top: none;
+  border-left: none;
+  right: 20px;
+  bottom: 20px;
+}
+.services-article__hover_tl {
+  position: absolute;
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  border-bottom: none;
+  border-right: none;
+  left: 20px;
+  top: 20px;
+}
+.services-article__hover_tr {
+  position: absolute;
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  border-bottom: none;
+  border-left: none;
+  right: 20px;
+  top: 20px;
 }
 
 @media screen and (max-width: 834px) {
@@ -586,9 +645,13 @@ h1 {
   }
 }
 @media screen and (max-width: 661px) {
+  .container-2 {
+    padding: 0px;
+  }
   .services-all__articles {
     display: flex;
     overflow: scroll;
+    padding: 0 69px;
   }
   .services-all__articles::-webkit-scrollbar {
     width: 0;
@@ -605,6 +668,9 @@ h1 {
   .services-all__info_text {
     font-size: 14px;
     margin-bottom: 24px;
+  }
+  .services-all__articles {
+    padding: 0 24px;
   }
   .services-all__articles::-webkit-scrollbar {
     width: 0;
@@ -714,17 +780,19 @@ h1 {
   gap: 24px;
 }
 .lawyers-all__article {
-  max-width: 312px;
-  width: 100%;
+  width: 312px;
   padding: 0 0 24px 0;
   background-color: #FFFFFF;
 }
-.lawyers-all__article_picture {
+.lawyers-article {
+  position: relative;
+}
+.lawyers-article__picture {
   width: 100%;
   overflow: hidden;
   margin-bottom: 24px;
 }
-.lawyers-all__article-info {
+.lawyers-article__info {
   display: flex;
   padding: 0px 16px;
   flex-direction: column;
@@ -732,7 +800,7 @@ h1 {
   gap: 10px;
   align-self: stretch;
 }
-.lawyers-all__article-info_name {
+.lawyers-article__info_name {
   color: #222;
   text-align: center;
   font-family: "NunitoSans", sans-serif;
@@ -741,7 +809,7 @@ h1 {
   font-weight: 700;
   line-height: 120%;
 }
-.lawyers-all__article-info_profession {
+.lawyers-article__info_profession {
   color: #222;
   text-align: center;
   font-family: "NunitoSans", sans-serif;
@@ -750,4 +818,104 @@ h1 {
   font-weight: 300;
   line-height: 120%;
   text-transform: lowercase;
+}
+.lawyers-article__hover_info1 {
+  display: none;
+  color: #000;
+  text-align: center;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+}
+.lawyers-article__hover_info2 {
+  display: none;
+  color: #222;
+  text-align: center;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.lawyers-article__hover_bl {
+  position: absolute;
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #4F8FF0;
+  border-right: none;
+  border-top: none;
+  left: 20px;
+  bottom: 20px;
+}
+.lawyers-article__hover_br {
+  position: absolute;
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #4F8FF0;
+  border-left: none;
+  border-top: none;
+  right: 20px;
+  bottom: 20px;
+}
+.lawyers-article__hover_tl {
+  position: absolute;
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #4F8FF0;
+  border-bottom: none;
+  border-right: none;
+  left: 20px;
+  top: 20px;
+}
+.lawyers-article__hover_tr {
+  position: absolute;
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #4F8FF0;
+  border-left: none;
+  border-bottom: none;
+  right: 20px;
+  top: 20px;
+}
+.lawyers-article:hover {
+  transition: 0.5s;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 83px 20px 84px 20px;
+}
+.lawyers-article:hover .lawyers-article__picture {
+  display: none;
+}
+.lawyers-article:hover .lawyers-article__info {
+  padding: 0;
+}
+.lawyers-article:hover .lawyers-article__hover_info1 {
+  display: block;
+}
+.lawyers-article:hover .lawyers-article__hover_info2 {
+  display: block;
+}
+.lawyers-article:hover .lawyers-article__hover_bl {
+  display: block;
+}
+.lawyers-article:hover .lawyers-article__hover_br {
+  display: block;
+}
+.lawyers-article:hover .lawyers-article__hover_tl {
+  display: block;
+}
+.lawyers-article:hover .lawyers-article__hover_tr {
+  display: block;
+}
+
+@media screen and (max-width: 834px) {
+  .lawyers-all__articles {
+    overflow: scroll;
+  }
 }/*# sourceMappingURL=style.css.map */

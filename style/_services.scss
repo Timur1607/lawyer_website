@@ -89,6 +89,7 @@
     }
 
     &-article{
+        position: relative;
 
         path{
             transition: 0.5s;
@@ -108,6 +109,21 @@
             }
             .services-article__info_text{
                 color:#FFF;
+            }
+
+            .services-article__hover{
+                &_bl{
+                display: block;
+                }
+                &_br{
+                display: block;
+                }
+                &_tl{
+                display: block;
+                }
+                &_tr{
+                display: block;
+                }
             }
         }
 
@@ -140,6 +156,56 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 120%; 
+            }
+        }
+
+        &__hover{
+            &_bl{
+                position: absolute;
+                display: none;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #FFF;
+                border-top: none;
+                border-right: none;
+                left: 20px;
+                bottom: 20px;
+            }
+
+            &_br{
+                position: absolute;
+                display: none;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #FFF;
+                border-top: none;
+                border-left: none;
+                right: 20px;
+                bottom: 20px;
+            }
+
+            &_tl{
+                position: absolute;
+                display: none;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #FFF;
+                border-bottom: none;
+                border-right: none;
+                left: 20px;
+                top: 20px;
+            }
+
+            &_tr{
+                position: absolute;
+                display: none;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #FFF;
+                border-bottom: none;
+                border-left: none;
+                right: 20px;
+                top: 20px;
             }
         }
     }
@@ -186,11 +252,15 @@
 }
 
 @media screen and (max-width:661px){
+    .container-2{
+        padding: 0px;
+    }
     .services{
         &-all{
             &__articles{
                 display: flex;
                 overflow: scroll;
+                padding: 0 69px;
             }
 
             &__articles{
@@ -222,6 +292,7 @@
             }
 
             &__articles{
+                padding: 0 24px;
                 
                 &::-webkit-scrollbar {
                     width: 0;

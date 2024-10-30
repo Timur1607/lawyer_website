@@ -48,45 +48,171 @@
         }
 
         &__article{
-            max-width: 312px;
-            width: 100%;
+            width: 312px;
             padding: 0 0 24px 0;
             background-color: #FFFFFF;
+        }
+    }
 
-            &_picture{
-                width: 100%;
-                overflow: hidden;
-                margin-bottom: 24px;
+    &-article{
+        position: relative;
+        &__picture{
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        &__info{
+            display: flex;
+            padding: 0px 16px;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+
+            &_name{
+                color: #222;
+                text-align: center;
+                font-family: "NunitoSans", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
             }
 
-            &-info{
-                display: flex;
-                padding: 0px 16px;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                align-self: stretch;
+            &_profession{
+                color: #222;
+                text-align: center;
+                font-family: "NunitoSans", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%;
+                text-transform: lowercase;
+            }
+        }
 
-                &_name{
-                    color: #222;
-                    text-align: center;
-                    font-family: "NunitoSans", sans-serif;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 120%;
-                }
+        &__hover{
+            &_info1{
+                display: none;
+                color: #000;
+                text-align: center;
+                font-family: "NunitoSans", sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 120%; 
+            }
 
-                &_profession{
-                    color: #222;
-                    text-align: center;
-                    font-family: "NunitoSans", sans-serif;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 120%;
-                    text-transform: lowercase;
+            &_info2{
+                display: none;
+                color: #222;
+                text-align: center;
+                font-family: "NunitoSans", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 120%;
+            }
+            &_bl{
+                position: absolute;
+                display: none;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #4F8FF0;
+                border-right: none;
+                border-top: none;
+                left: 20px;
+                bottom: 20px;
+            }
+            &_br{
+                position: absolute;
+                display: none;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #4F8FF0;
+                border-left: none;
+                border-top: none;
+                right: 20px;
+                bottom: 20px;
+            }
+            &_tl{
+                position: absolute;
+                display: none;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #4F8FF0;
+                border-bottom: none;
+                border-right: none;
+                left: 20px;
+                top: 20px;
+            }
+            &_tr{
+                position: absolute;
+                display: none;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #4F8FF0;
+                border-left: none;
+                border-bottom: none;
+                right: 20px;
+                top: 20px;
+            }
+
+        }
+
+        &:hover{
+            transition: 0.5s;
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 83px 20px 84px 20px;
+
+            .lawyers{
+                &-article{
+                    &__picture{
+                        display: none;
+                    }
+
+                    &__info{
+                        padding: 0;
+                    }
+
+                    &__hover{
+                        &_info1{
+                           display: block; 
+                        }
+                        &_info2{
+                            display: block;
+                        }
+                    }
                 }
+                
+            }
+            
+            
+            .lawyers-article__hover{
+                &_bl{
+                    display: block;
+                }
+                &_br{
+                    display: block;
+                }
+                &_tl{
+                    display: block;
+                }
+                &_tr{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:834px){
+    .lawyers{
+        &-all{
+            &__articles{
+                overflow: scroll;
             }
         }
     }
