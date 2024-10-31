@@ -733,6 +733,7 @@ h1 {
   justify-content: center;
 }
 .button_gray:hover {
+  transition: 0.5s;
   border: 2px solid #E6E6E6;
   background: #FFF;
 }
@@ -786,6 +787,7 @@ h1 {
 }
 .lawyers-article {
   position: relative;
+  width: 312px;
 }
 .lawyers-article__picture {
   width: 100%;
@@ -881,6 +883,37 @@ h1 {
   right: 20px;
   top: 20px;
 }
+.lawyers-article-hover {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 83px 20px 84px 20px;
+}
+.lawyers-article-hover__picture {
+  display: none;
+}
+.lawyers-article-hover__info {
+  padding: 0;
+}
+.lawyers-article-hover__hover_info1 {
+  display: block;
+}
+.lawyers-article-hover__hover_info2 {
+  display: block;
+}
+.lawyers-article-hover .lawyers-article-hover__hover_bl {
+  display: block;
+}
+.lawyers-article-hover .lawyers-article-hover__hover_br {
+  display: block;
+}
+.lawyers-article-hover .lawyers-article-hover__hover_tl {
+  display: block;
+}
+.lawyers-article-hover .lawyers-article-hover__hover_tr {
+  display: block;
+}
 .lawyers-article:hover {
   transition: 0.5s;
   gap: 40px;
@@ -915,7 +948,47 @@ h1 {
 }
 
 @media screen and (max-width: 834px) {
+  .container-2 {
+    padding: 0;
+  }
+  .lawyers {
+    padding: 60px 0;
+  }
+  .lawyers-all__title_h2 {
+    font-size: 24px;
+  }
   .lawyers-all__articles {
     overflow: scroll;
+    padding: 0 69px;
+  }
+  .lawyers-all__articles::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .lawyers-article {
+    width: 300px;
+    height: 390px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .lawyers {
+    padding: 40px 0 46px 0;
+  }
+  .lawyers-all__title {
+    margin-bottom: 16px;
+  }
+  .lawyers-all__title_h2 {
+    font-size: 20px;
+  }
+  .lawyers-all__title_text {
+    font-size: 14px;
+    margin-bottom: 29px;
+  }
+  .lawyers-all__articles {
+    padding: 0 69px;
+  }
+  .lawyers-article {
+    width: 250px;
+    height: 324px;
   }
 }/*# sourceMappingURL=style.css.map */
