@@ -2,7 +2,6 @@
     padding: 80px 0;
     background: #F7F7F7;
 
-
     &-all{
         &__title{
             gap: 10px;
@@ -250,6 +249,22 @@
     }
 }
 
+@media screen and (max-width:1402px){
+    .container-2{
+        padding: 0;
+    }
+    .lawyers-all__articles{
+        display: -webkit-box;
+        overflow: scroll;
+        padding: 0 69px;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+
+}
+
 @media screen and (max-width:834px){
     .container-2{
         padding: 0;
@@ -304,7 +319,6 @@
 
         &-article{
             width: 250px;
-            height: 324px;
         }
     }
 }

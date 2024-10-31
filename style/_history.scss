@@ -88,11 +88,10 @@
 
 
         &__button1{
-            max-width: 210px;
-            width: 100%;
             height: 49px;
             transition: 0.5s;
-
+            padding: 16px 24px;
+            
             &:hover{
                 border: 2px solid #4F8FF0;
                 background: #FFF;

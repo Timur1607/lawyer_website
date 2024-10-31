@@ -137,6 +137,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            width: 100%;
 
             &_name{
                 color: var(--colors-black-text, #222);
@@ -156,6 +157,7 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 120%; 
+                width: 100%;
             }
         }
 
@@ -258,7 +260,7 @@
     .services{
         &-all{
             &__articles{
-                display: flex;
+                display: -webkit-box;
                 overflow: scroll;
                 padding: 0 69px;
             }
@@ -268,6 +270,9 @@
                     width: 0;
                     height: 0;
                 }
+            }
+            &__Article{
+                width: 336px;
             }
         }
     }
