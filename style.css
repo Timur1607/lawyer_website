@@ -1272,9 +1272,78 @@ h1 {
 }
 .materials-article__picture {
   width: 100%;
+  transition: 0.5s;
+}
+.materials-article__picture_top {
+  z-index: 100;
+  position: relative;
+  color: rgba(79, 143, 240, 0.4);
+  background: rgba(79, 143, 240, 0.4);
+}
+.materials-article__hover_bl {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  left: 20px;
+  bottom: 20px;
+  border-top: none;
+  border-right: none;
+  transition: 0.5s;
+}
+.materials-article__hover_br {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  right: 20px;
+  bottom: 20px;
+  border-top: none;
+  border-left: none;
+  transition: 0.5s;
+}
+.materials-article__hover_tl {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  top: 20px;
+  left: 20px;
+  border-bottom: none;
+  border-right: none;
+  transition: 0.5s;
+}
+.materials-article__hover_tr {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFF;
+  top: 20px;
+  right: 20px;
+  border-bottom: none;
+  border-left: none;
+  transition: 0.5s;
 }
 .materials-article__div {
   display: none;
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.materials-article__div_svg {
+  width: 20px;
+  height: 20px;
 }
 .materials-article__info {
   display: flex;
@@ -1288,6 +1357,7 @@ h1 {
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
+  transition: 0.5s;
 }
 .materials-article__info-time-span {
   display: flex;
@@ -1320,6 +1390,38 @@ h1 {
   font-weight: 400;
   line-height: 120%;
 }
+.materials-article :hover {
+  transition: 0.5s;
+}
+.materials-article :hover .materials-article__hover_bl {
+  display: block;
+  transition: 0.5s;
+}
+.materials-article :hover .materials-article__hover_br {
+  display: block;
+  transition: 0.5s;
+}
+.materials-article :hover .materials-article__hover_tl {
+  display: block;
+  transition: 0.5s;
+}
+.materials-article :hover .materials-article__hover_tr {
+  display: block;
+  transition: 0.5s;
+}
+.materials-article :hover .materials-article__div {
+  display: flex;
+}
+.materials-article :hover .materials-article__info_name {
+  color: #4F8FF0;
+  transition: 0.5s;
+}
+.materials-article :hover .materials-article__picture {
+  background: rgba(79, 143, 240, 0.4);
+}
+.materials-article :hover .materials-article__picture_top {
+  background: rgba(79, 143, 240, 0.4);
+}
 .materials-button {
   display: flex;
   padding: 16px 24px;
@@ -1336,4 +1438,74 @@ h1 {
   background: var(--blue-color-100, #4F8FF0);
   margin: 0 auto;
   margin-top: 48px;
+}
+
+@media screen and (max-width: 1120px) {
+  .container-2__materials {
+    padding: 0;
+  }
+  .materials-articles {
+    display: -webkit-box;
+    overflow: scroll;
+    padding: 0 69px;
+  }
+  .materials-articles::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 834px) {
+  .materials {
+    padding: 60px 0;
+  }
+  .materials-all__title {
+    margin-bottom: 30px;
+  }
+  .materials-all__title_h2 {
+    font-size: 24px;
+  }
+  .materials-all__text {
+    margin-bottom: 29px;
+  }
+  .materials-article {
+    width: 336px;
+  }
+  .materials-article__picture {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .materials-article {
+    width: 250px;
+  }
+  .materials-article__picture {
+    height: 200px;
+  }
+  .materials-article__info_Span {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .materials {
+    padding: 40px 0;
+  }
+  .materials-all__title {
+    margin-bottom: 16px;
+  }
+  .materials-all__title_h2 {
+    font-size: 20px;
+  }
+  .materials-all__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .materials-articles {
+    padding: 0 24px;
+  }
+  .materials-article__info_name {
+    font-size: 14px;
+  }
+  .materials-button {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
