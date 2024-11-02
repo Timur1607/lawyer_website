@@ -5,7 +5,9 @@
     padding: 80px 0;
     &-all{
         &__nav{
-
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 48px;
         }
     }
 
@@ -14,7 +16,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        margin-bottom: 48px;
 
         &_h2{
             color: #222;
@@ -30,6 +31,30 @@
             height: 3px;
             background: #4F8FF0;
             border: none;
+        }
+    }
+
+    &-nav__button{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 30px;
+        margin-top: 13px;
+        &_left{
+            fill: #4F8FF0;
+        }
+
+        &_right{
+            fill: #4F8FF0;
+        }
+
+        &_center{
+            display: none;
+            rotate: 120deg;
+            width: 32px;
+            height: 2.5px;
+            border: none;
+            background-color: #4F8FF0;
         }
     }
 
@@ -123,13 +148,14 @@
                 border: 2px solid #E6E6E6;
                 background: #E6E6E6;
                 height: 49px;
+                transition: 0.5s;
             }
         }
     }
 }
 
 @media screen and (max-width:1100px){
-    .container-2{
+    .container-2__reviews{
         padding: 0;
     }
     .reviews-articles{
@@ -139,6 +165,101 @@
         &::-webkit-scrollbar {
             width: 0;
             height: 0;
+        }
+    }
+}
+
+@media screen and (max-width:834px){
+    .reviews{
+        background-image: url(./img/background-834px.webp);
+        padding: 60px 0;
+        &-all{
+            &__nav{
+
+            }
+        }
+
+        &-nav{
+            &__title{
+                &_h2{
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-article{
+            width: 576px;
+        }
+
+        &-articles{
+            margin-bottom: 36px;
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .container-1{
+        padding: 0 24px;
+    }
+
+    .reviews{
+        &-all{
+            &__buttons{
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        &-nav{
+            &__button{
+                display: none;
+            }
+            &__title{
+                &_h2{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &-article{
+            padding: 24px;
+            width: 340px;
+
+            &__personal{
+                gap: 16px;
+
+                &-info{
+                    &_name{
+                        font-size: 18px;
+                    }
+                }
+                &_picture1{
+                    width: 50px;
+                    height: 50px;
+                }
+                &_picture2{
+                    display: none;
+                }
+            }
+        }
+
+        &-articles{
+            padding: 0 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (max-width:390px){
+    .reviews{
+        background-image: url(./img/background-mobile.webp);
+        padding: 40px 0;
+
+        &-all{
+
+            &__nav{
+                margin-bottom: 24px;
+            }
         }
     }
 }
