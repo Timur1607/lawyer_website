@@ -251,17 +251,21 @@
 }
 
 @media screen and (max-width:1402px){
-    // .container-2{
-    //     padding: 0;
-    // }
+    .container-2__lawyers{
+        padding: 0;
+    }
     .lawyers-all__articles{
-        display: -webkit-box;
+        display: flex;
         overflow: scroll;
-        // padding: 0 69px;
+        padding: 0 69px;
         &::-webkit-scrollbar {
             width: 0;
             height: 0;
         }
+    }
+
+    .lawyers-article{
+        flex: 0 0 312px;
     }
 
 }
@@ -293,7 +297,7 @@
         }
 
         &-article{
-            width: 300px;
+            flex: 0 0 300px;
             height: 390px;
             box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
         }
@@ -323,7 +327,7 @@
         }
 
         &-article{
-            width: 250px;
+            flex: 0 0 250px;
             box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
 
             &:hover{

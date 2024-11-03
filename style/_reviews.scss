@@ -160,12 +160,15 @@
     }
     .reviews-articles{
         padding: 0 69px;
-        display: -webkit-box;
+        display: flex;
         overflow: scroll;
         &::-webkit-scrollbar {
             width: 0;
             height: 0;
         }
+    }
+    .reviews-article{
+        flex: 0 0 576px;
     }
 }
 
@@ -188,7 +191,7 @@
         }
 
         &-article{
-            width: 576px;
+            flex: 0 0 576px;
         }
 
         &-articles{
@@ -223,7 +226,7 @@
 
         &-article{
             padding: 24px;
-            width: 340px;
+            flex: 0 0 340px;
 
             &__personal{
                 gap: 16px;

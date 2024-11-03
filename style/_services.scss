@@ -276,7 +276,7 @@
     .services{
         &-all{
             &__articles{
-                display: -webkit-box;
+                display: flex;
                 overflow: scroll;
                 padding: 0 69px;
             }
@@ -288,7 +288,7 @@
                 }
             }
             &__article{
-                width: 336px;
+                flex: 0 0 336px;
             }
         }
     }
@@ -322,7 +322,7 @@
             }
 
             &__article{
-                width: 250px;
+                flex: 0 0 250px;
                 height: 215px;
                 padding: 24px 16px 32px 16px;
             }
