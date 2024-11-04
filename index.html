@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lawyers</title>
     <link rel="stylesheet" href="./reset.scss">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section class="header__top">
-        <div class="container">
-            <div class="header__top_all">
-                <div class="header__info">
-                    <div class="header__info_number number">
+    <section class="header-top">
+        <div class="container container__header-top">
+            <div class="header-top__all">
+                <div class="header-top__info">
+                    <div class="header-top__info_number number">
                         <img class="number__img" src="./img/phone.svg" alt="телефон">
                         <p class="number__text">+7 (922) 022-94-82</p>
                     </div>
-                    <div class="header__info_mail mail">
+                    <div class="header-top__info_mail mail">
                         <img class="mail__img" src="./img/mail.svg" alt="почта">
                         <p class="mail__text">janis62@yahoo.com</p>
                     </div>
                 </div>
-                <a class="header__info_call" href="#">Заказать звонок</a>
+                <a class="header-top__info_call" href="#">Заказать звонок</a>
             </div>
         </div>
     </section>
     <section class="header">
-        <div class="container">
+        <div class="container container-header">
             <div class="header__all">
                 <div class="header__menu">
-                    <div class="header__menu_name">
-                        <h1>Правозащитник</h1>
-                        <p class="header__menu_name-text">Юридическая компания</p>
-                    </div>
+                    <h1 class="header__menu_h1">Правозащитник</h1>
+                    <p class="header__menu_text">Юридическая компания</p>
                 </div>
                 <div class="header__main">
                     <a class="header__main_link" href="#">Услуги</a>
@@ -42,16 +40,30 @@
                     <a class="header__main_link" href="#">Новости</a>
                     <a class="header__main_link" href="#">Контакты</a>
                 </div>
+                <button class="header__burger">
+                    <input id="chekbox" type="checkbox" name="">
+                    <label for="chekbox" class="header__burger_label">
+                        <span class="header__burger_line"></span>
+                    </label>
+                    <ul class="header__burger_ul header__burger_menu">
+                        <li class="header__burger_li"><a class="header__burger_a" href="#">Услуги</a></li>
+                        <li class="header__burger_li"><a class="header__burger_a" href="#">О компании</a></li>
+                        <li class="header__burger_li"><a class="header__burger_a" href="#">Наши юристы</a></li>
+                        <li class="header__burger_li"><a class="header__burger_a" href="#">Отзывы</a></li>
+                        <li class="header__burger_li"><a class="header__burger_a" href="#">Новости</a></li>
+                        <li class="header__burger_li"><a class="header__burger_a" href="#">Контакты</a></li>
+                    </ul>
+                </button>
             </div>
         </div>
-        <div class="container">
+        <div class="container container__header">
             <div class="header__bottom-all">
                 <div class="header__bottom-all_text">
                     <p class="header__bottom-all_text-1">Оказываем весь комплекс</p>
                     <p class="header__bottom-all_text-2">Юридических услуг</p>
                     <p class="header__bottom-all_text-3">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
                 </div>
-                <button class="header__bottom-all_button">Наши услуги</button>
+                <button class="header__bottom-all_button button">Наши услуги</button>
                 <div class="header__bottom-all_slider slider">
                     <div class="slider__menu">
                         <span class="slider__span slider__span_active"></span>
@@ -59,9 +71,19 @@
                         <span class="slider__span"></span>
                     </div>
                     <div class="slider__buttons">
-                        <button class="slider__button_left" ></button>
-                        <span class="slider__button_center"></span>
-                        <button class="slider__button_left"></button>
+                        <a class="slider__button_left" ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="20px/arrowleft">
+                            <path id="Vector" d="M14.3055 18.3333L5.97217 9.99996L14.3055 1.66663L15.7847 3.14579L8.9305 9.99996L15.7847 16.8541L14.3055 18.3333Z" fill="#E6E6E6"/>
+                            </g>
+                            </svg>
+                        </a>
+                        <img class="slider__button_center" src="./img/Line-white.png" alt="разделительная линия">
+                        <a class="slider__button_right"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="20px/arrowright">
+                            <path id="Vector" d="M6.68742 18.3333L5.20825 16.8541L12.0624 9.99996L5.20825 3.14579L6.68742 1.66663L15.0208 9.99996L6.68742 18.3333Z" fill="#E6E6E6"/>
+                            </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -287,7 +309,7 @@
                             <path class="reviews-nav__button_left" d="M14.3055 18.3333L5.97217 9.99996L14.3055 1.66663L15.7847 3.14579L8.9305 9.99996L15.7847 16.8541L14.3055 18.3333Z" fill="#E6E6E6"/>
                             </svg>
                         </a>
-                        <span class="reviews-nav__button_center"></span>
+                        <img class="reviews-nav__button_center" src="./img/Line-reviews.png" alt="разделительная линия">
                         <a href="#" class="reviews-nav__button_right"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="reviews-nav__button_right" d="M6.68742 18.3333L5.20825 16.8541L12.0624 9.99996L5.20825 3.14579L6.68742 1.66663L15.0208 9.99996L6.68742 18.3333Z" fill="#E6E6E6"/>
                             </svg>
@@ -415,7 +437,7 @@
         </div>
     </section>
     <section class="footer">
-        <div class="container">
+        <div class="container container-footer">
             <div class="footer-all">
                 <div class="footer-title">
                     <div class="footer-title__title">
@@ -476,6 +498,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="footer-rights">
+        <div class="footer-rights__all">
+            <p class="footer-rights__all_time">Все права защищены, 2023</p>
+            <p class="footer-rights__all_text">Политика обработки персональных данных</p>
         </div>
     </section>
 </body>

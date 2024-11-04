@@ -42,8 +42,6 @@
                 font-weight: 900;
                 line-height: 150%;
                 text-transform: lowercase;
-                max-width: 862px;
-                width: 100%;
             }
         }
 
@@ -55,6 +53,8 @@
             font-weight: 400;
             line-height: 120%;
             text-transform: lowercase;
+            max-width: 862px;
+            width: 100%;
         }
     }
 
@@ -67,45 +67,6 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
-
-        .contacts-adress{
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            height: 55px;
-
-            &__picture{
-                background: var(--color-black-100, #2C2C2C);
-                display: flex;
-                width: 55px;
-                height: 55px;
-                justify-content: center;
-                align-items: center;
-
-                &_svg{
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-            &__info{
-                &_text{
-                    color: var(--white-color-400, #8C8C8C);
-                    font-family: "NunitoSans", sans-serif;
-                    font-size: 12px;
-                    font-weight: 700;
-                    line-height: 120%;
-                    text-transform: uppercase;
-                }
-                &_adress{
-                    color: #FFF;
-                    font-family: "NunitoSans", sans-serif;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 150%; 
-                    text-decoration: none;
-                }
-            }
-        }
     }
 
     &-nav{
@@ -198,5 +159,147 @@
         line-height: 120%;
         text-transform: uppercase;
         height: 49px;
+    }
+}
+
+.contacts-adress{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 55px;
+    padding: 0 64px 0 0;
+
+    &__picture{
+        background: var(--color-black-100, #2C2C2C);
+        display: flex;
+        width: 55px;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+
+        &_svg{
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &__info{
+        &_text{
+            color: var(--white-color-400, #8C8C8C);
+            font-family: "NunitoSans", sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+        &_adress{
+            color: #FFF;
+            font-family: "NunitoSans", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 150%; 
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width:1293px) {
+    .footer{
+        &-title{
+            &__text{
+                display: none;
+            }
+        }
+
+        &-nav{
+            max-width: 250px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:1233px) {
+    .footer{
+        &-nav{
+            display: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width:980px) {
+    .contacts-adress{
+        height: 45px;
+        gap: 16px;
+        padding: 0 32px 0 0;
+
+        &__picture{
+            width: 45px;
+            height: 45px;
+
+            &_svg{
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &__info{
+            &_adress{
+                font-size: 14px;
+            }
+        }
+    }
+    .footer{
+        &-contacts{
+            gap: 34px;
+        }
+
+        &-lawyer{
+            max-width: 334px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:834px) {
+    .footer{
+        padding: 60px 0;
+
+        &-all{
+            &__hr{
+                margin: 24px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:806px){
+    .footer{
+        &-info{
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:472px){
+    .container-footer{
+        padding: 0 24px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .footer{
+        padding: 40px 0;
+        &-contacts{
+            gap: 16px;
+        }
+
+        &-title{
+            justify-content: center;
+        }
+    }
+    .contacts-adress{
+        padding: 0;
     }
 }

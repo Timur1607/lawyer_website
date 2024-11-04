@@ -192,6 +192,8 @@
         }
 
         &:hover{
+            cursor: url("./img/cursor.svg"), auto;
+            
             .materials-article{
                 &__hover{
                     &_bl{
