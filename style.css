@@ -223,11 +223,10 @@ table {
 .header__all {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0 28px 0;
+  padding: 22px 69px 28px 69px;
   max-width: 1458px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 69px;
   align-items: center;
 }
 .header__menu {
@@ -270,6 +269,11 @@ table {
   font-weight: 700;
   line-height: 120%;
   text-decoration: none;
+  transition: 0.5s;
+}
+.header__main_link:hover {
+  text-decoration: underline;
+  color: #4F8FF0;
 }
 .header__bottom-all {
   padding: 150px 0 36px 0;
@@ -472,6 +476,9 @@ table {
   }
 }
 @media screen and (max-width: 834px) {
+  .header__all {
+    padding: 0 69px;
+  }
   .header__menu_h1 {
     font-size: 22px;
   }
@@ -1721,6 +1728,11 @@ table {
   line-height: 120%;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.5s;
+}
+.footer-nav__link:hover {
+  color: #4F8FF0;
+  text-decoration: underline;
 }
 .footer-lawyer {
   display: flex;
@@ -1975,6 +1987,7 @@ table {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  text-decoration: none;
 }
 
 .mail__text {
@@ -1984,6 +1997,7 @@ table {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 665px) {

@@ -7,11 +7,10 @@
     &__all{
         display: flex;
         justify-content: space-between;
-        padding: 22px 0 28px 0;
+        padding: 22px 69px 28px 69px;
         max-width: 1458px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 69px;
         align-items: center;
     }
 
@@ -58,6 +57,12 @@
             font-weight: 700;
             line-height: 120%;
             text-decoration: none;
+            transition: 0.5s;
+
+            &:hover{
+                text-decoration: underline;
+                color: #4F8FF0;
+            }
         }
     }
 
@@ -151,7 +156,13 @@
             height: 2px;
             border: none;
             background-color: #FFF;
+            
         }
+
+        // &_line-center{
+        //     width: 15px;
+        //     margin-right: 3px;
+        // }
 
         &_line::before{
             content:"";
@@ -289,6 +300,11 @@
 
 @media screen and (max-width:834px){
     .header{
+
+        &__all{
+            padding: 0 69px;
+        }
+
         &__menu{
             &_h1{
                 font-size: 22px;
