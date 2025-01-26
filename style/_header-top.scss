@@ -34,6 +34,11 @@
             font-weight: 700;
             line-height: 150%;
             text-decoration: none;
+            transition: 0.5s;
+            &:hover{
+                text-decoration: underline;
+                color: #FFF;
+            }
         }
     }
 }
@@ -46,6 +51,11 @@
     font-weight: 600;
     line-height: 120%;
     text-decoration: none;
+    transition: 0.5s;
+    &:hover{
+        text-decoration: underline;
+        color: #4F8FF0;
+    }
 }
 .mail__text{
     color: #FFF;
@@ -55,6 +65,11 @@
     font-weight: 600;
     line-height: 120%; 
     text-decoration: none;
+    transition: 0.5s;
+    &:hover{
+        text-decoration: underline;
+        color: #4F8FF0;
+    }
 }
 
 @media screen and (max-width:665px){

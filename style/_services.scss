@@ -50,6 +50,17 @@
             justify-items: center;
             gap: 24px;
             row-gap: 38px;
+
+            &_link{
+                max-width: 1320px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
+                justify-content: space-between;
+                justify-items: center;
+                gap: 24px;
+                row-gap: 38px;
+            }
         }
 
         &__article{
@@ -279,6 +290,10 @@
                 display: flex;
                 overflow: scroll;
                 padding: 0 69px;
+                &_link{
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    padding: 0 69px;
+                }
             }
 
             &__articles{
@@ -314,6 +329,10 @@
 
             &__articles{
                 padding: 0 24px;
+
+                &_link{
+                    padding: 0 24px;
+                }
                 
                 &::-webkit-scrollbar {
                     width: 0;

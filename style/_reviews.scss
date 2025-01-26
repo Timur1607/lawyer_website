@@ -53,6 +53,19 @@
         display: flex;
         gap: 24px;
         margin-bottom: 32px;
+
+        &__reviews{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)) ;
+            gap: 24px;
+
+            &_link{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)) ;
+                gap: 24px;
+                margin-bottom: 32px;
+            }
+        }
     }
 
     &-article{
@@ -120,6 +133,8 @@
             display: flex;
             align-items: center;
             gap: 24px;
+
+            
         }
 
         &__button{
@@ -141,6 +156,12 @@
                 height: 49px;
                 transition: 0.5s;
             }
+
+            &_reviews{
+                position: fixed;
+                bottom: 5%;
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -153,6 +174,10 @@
         padding: 0 69px;
         display: flex;
         overflow: scroll;
+
+        &__reviews_link{
+            padding: 0 69px;
+        }
         &::-webkit-scrollbar {
             width: 0;
             height: 0;
@@ -161,6 +186,13 @@
     .reviews-article{
         flex: 0 0 576px;
     }
+}
+@media screen  and (max-width: 841px){
+    .reviews-articles__reviews_link{
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) ;
+        
+    }
+
 }
 
 @media screen and (max-width:834px){
@@ -240,6 +272,10 @@
         &-articles{
             padding: 0 24px;
             margin-bottom: 24px;
+
+            &__reviews_link{
+                padding: 0 24px;
+            }
         }
     }
 }
@@ -250,10 +286,15 @@
         padding: 40px 0;
 
         &-all{
-
             &__nav{
                 margin-bottom: 24px;
             }
+        }
+        &-articles__reviews_link{
+            padding: 0;
+        }
+        &-article{
+            padding: 15px;
         }
     }
 }

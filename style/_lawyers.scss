@@ -62,6 +62,7 @@
             width: 100%;
             overflow: hidden;
             margin-bottom: 24px;
+            height: 320px;
         }
 
         &__info{
@@ -330,6 +331,10 @@
         &-article{
             flex: 0 0 250px;
             box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+
+            &__picture{
+                height: 235px;
+            }
 
             &:hover{
                 padding: 43px 20px 44px 20px;

@@ -24,6 +24,11 @@
                 background: #4F8FF0;
                 border: none;
             }
+
+            &_materials{
+                display: flex;
+                flex-direction: row;
+            }
         }
 
         &__text{
@@ -41,10 +46,18 @@
         display: flex;
         flex-direction: row;
         gap: 24px;
+
+        &__materials{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)) ;
+            gap: 24px;
+            
+        }
     }
 
     &-article{
         width: 424px;
+        z-index: 1;
 
         &__picture{
             width: 100%;
@@ -227,6 +240,8 @@
                 }
             }
         }
+
+        
     }
 
     &-button{
@@ -245,6 +260,12 @@
         background: var(--blue-color-100, #4F8FF0);
         margin: 0 auto;
         margin-top: 48px;
+
+        &_materials{
+            margin: 0;
+            padding: 16px 24px;
+            margin-bottom: 25px;
+        }
     }
 }
 

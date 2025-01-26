@@ -1,4 +1,5 @@
 .button{
+    max-width: max-content;
     display: flex;
     // padding: 16px 24px;
     align-items: flex-start;
@@ -16,6 +17,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    text-decoration: none;
 
     &:hover{
         border: 2px solid #4F8FF0;
